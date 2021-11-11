@@ -4,13 +4,13 @@ using UnityEngine.InputSystem;
 public class PaddleController : MonoBehaviour
 {
     [Header("References")]
-    public GameObject Ball;
+    [Tooltip("The ball that is launched.")] public GameObject Ball;
 
     [Header("Data")]
-    public float Force = 1.5f;
+    [Tooltip("The force at which to launch the ball.")] public float Force = 1.5f;
 
     [Header("Sounds")]
-    public AudioSource LaunchSound;
+    [Tooltip("The sound to play when a ball is launched.")] public AudioSource LaunchSound;
 
     [HideInInspector] public bool BallAttached = true;
 
